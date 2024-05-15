@@ -1,0 +1,1 @@
+python run.py configs/instant-mesh-large.yaml examples/hatsune_miku.png --save_video
