@@ -98,7 +98,7 @@ A 3*2 multiview image with a .png extension will be produced in the images folde
 
 ## Repositorymap
 
-copy instant_mesh_base.ckpt to the ckpt folder (download form [here](https://huggingface.co/TencentARC/InstantMesh/tree/main).
+copy instant_mesh_base.ckpt to the ckpt folder (download form [here](https://huggingface.co/TencentARC/InstantMesh/tree/main)).
 
 copy instant-mesh-base.yaml to the configs folder
 
