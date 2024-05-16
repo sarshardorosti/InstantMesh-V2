@@ -2,9 +2,6 @@
   
 # InstantMesh V2: Efficient 3D Mesh Generation from a Single Image with Sparse-view Large Reconstruction Models
 
-![Layout](https://github.com/sarshardorosti/MasterClass/assets/50841748/e16a716a-e05e-46ed-82bd-eb4957d89a39)
-
-
 </div>
 ---
 
@@ -86,6 +83,7 @@ python run.py configs/instant-mesh-large.yaml examples/hatsune_miku.png --save_v
 ```
 
 
+![Layout](https://github.com/sarshardorosti/MasterClass/assets/50841748/e16a716a-e05e-46ed-82bd-eb4957d89a39)
 
 
 
