@@ -26,7 +26,9 @@ Initial experiments showed that the enhanced InstantMesh model excels in edge de
 - [x] Deep Learning Integration: Utilizing CNNs, GANs, and diffusion models for high-fidelity 3D reconstructions.
 - [x] User Customization: Allowing user selection from generated angles to create customized 3D models.
 - [x] Efficiency and Speed: Optimizing processing speed and resource usage for practical applications in virtual studio environments.
-![diagram2](https://github.com/sarshardorosti/MasterClass/assets/50841748/3111c6b1-a30d-48c1-9f17-d82bfb90f733)
+
+
+![diagram2 copy](https://github.com/sarshardorosti/MasterClass/assets/50841748/765baaca-da96-4483-8216-104a3f06b087)
 
 
 # ⚙️ Dependencies and Installation
