@@ -93,6 +93,10 @@ python run.py configs/instant-mesh-large.yaml examples/hatsune_miku.png --save_v
 
 
 ## Repositorymap
+
+copy instant_mesh_base.ckpt to the ckpt folder
+copy instant-mesh-base.yaml to the configs folder
+Please place the required images as input in the examples folder. After running the code from the command line, the newly generated angles will be created in the multiviews directory within images. You will then be prompted to sequentially enter the numbers of 6 desired angles in the command line. A 3*2 multiview image with a .png extension will be produced in the images folder, and using this image, a 3D mesh model will be created in the meshes folder.
 ```
 instantmesh
 │
@@ -108,7 +112,7 @@ instantmesh
 │   ├── 2.jpg
 │   └── 3.jpg
 ├── outputs
-│   └── instant-mesh-large
+│   └── instant-mesh-base
 │       ├── images
 │       │   └── multiviews
 │       ├── meshes
@@ -146,9 +150,7 @@ We implemented significant modifications to better suit our specific needs. The 
 ![Layout](https://github.com/sarshardorosti/MasterClass/assets/50841748/e16a716a-e05e-46ed-82bd-eb4957d89a39)
 
 
-Enhancements and Objectives
-By implementing these changes, we aim to create a versatile and user-friendly model that not only meets but exceeds the dynamic requirements of Mo-Sys studio projects. This next step leverages the strengths of InstantMesh while addressing its minor shortcomings, ensuring it remains at the forefront of 3D modeling technology. Our proactive approach in customizing and enhancing InstantMesh will solidify its role as a critical tool in our studio's technological arsenal, driving innovation and efficiency in our 3D production processes.
-
+Enhancements and Objectives By implementing these changes, we aim to create a versatile and user-friendly model that not only meets but exceeds the dynamic requirements of Mo-Sys studio projects. This next step leverages the strengths of InstantMesh while addressing its minor shortcomings. 
 
 
 
