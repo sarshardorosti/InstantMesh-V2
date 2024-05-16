@@ -5,6 +5,7 @@
 <a href="https://github.com/jtydhr88/ComfyUI-InstantMesh"><img src="https://img.shields.io/badge/Demo-ComfyUI-8A2BE2"></a>
 
 </div>
+![aaaaaa](https://github.com/sarshardorosti/MasterClass/assets/50841748/de23f814-4c47-41e8-abf9-d6885e2aa108)
 
 ---
 
