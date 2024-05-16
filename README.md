@@ -101,15 +101,7 @@ instantmesh
 ├── train.py
 ├── assets
 ├── ckpts
-│   ├── .gitattributes
-│   ├── diffusion_pytorch_model.bin
-│   ├── instant_mesh_base.ckpt
-│   ├── instant_mesh_large.ckpt
-│   ├── models--sudo-ai--zero123plus-v1.2
-│   └── models--TencentARC--InstantMesh
 ├── configs
-│   ├── instant-mesh-base.yaml
-│   ├── instant-mesh-large.yaml
 ├── docker
 ├── examples
 │   ├── 1.jpg
@@ -123,10 +115,6 @@ instantmesh
 │       └── videos
 ├── src
 └── zero123plus
-
-
-
-
 ```
 
 ## Code Implementation
