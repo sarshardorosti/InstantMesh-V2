@@ -18,7 +18,7 @@ During the final phases of our assessment, we identified and tested InstantMesh,
 InstantMesh integrates sparse-view large reconstruction models and multi-view diffusion models to ensure rapid processing and significantly enhance the detail and quality of 3D meshes. This dual approach makes InstantMesh faster and more accurate than other methods, ideal for our studio's fast-paced, quality-focused production environment.
 Initial experiments showed that the enhanced InstantMesh model excels in edge detection, object recognition, and background removal. The modifications resulted in significant improvements in fidelity and flexibility, allowing for more detailed and customizable 3D reconstructions from multiple camera angles.
 
-
+![diagram2 copy](https://github.com/sarshardorosti/MasterClass/assets/50841748/765baaca-da96-4483-8216-104a3f06b087)
 
 # 🚩 **Key Features**
 
@@ -27,8 +27,9 @@ Initial experiments showed that the enhanced InstantMesh model excels in edge de
 - [x] User Customization: Allowing user selection from generated angles to create customized 3D models.
 - [x] Efficiency and Speed: Optimizing processing speed and resource usage for practical applications in virtual studio environments.
 
+![1111111](https://github.com/sarshardorosti/MasterClass/assets/50841748/6cd9de02-08f5-4570-8f81-415b3ea6c75f)
 
-![diagram2 copy](https://github.com/sarshardorosti/MasterClass/assets/50841748/765baaca-da96-4483-8216-104a3f06b087)
+
 
 
 # ⚙️ Dependencies and Installation
