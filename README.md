@@ -1,6 +1,6 @@
 <div align="center">
   
-# InstantMesh: Efficient 3D Mesh Generation from a Single Image with Sparse-view Large Reconstruction Models
+# InstantMesh V2: Efficient 3D Mesh Generation from a Single Image with Sparse-view Large Reconstruction Models
 
 <a href="https://github.com/jtydhr88/ComfyUI-InstantMesh"><img src="https://img.shields.io/badge/Demo-ComfyUI-8A2BE2"></a>
 
@@ -8,12 +8,19 @@
 
 ---
 
-This repo is the official implementation 
+Machine Learning Techniques for Enhanced 3D Reconstruction from Multi-Camera Studio Views
+Project Overview
+This project explores the use of machine learning (ML) for 3D reconstruction of studio sets from three or more camera views. It was conducted as part of the MSc in Artificial Intelligence for Media at Bournemouth University. 
+The research investigates advanced methods for converting 2D images into 3D models, emphasizing deep learning technologies like CNNs and diffusion models. We reviewed over 80 papers from 2014 to 2024 and analyzed 18 models to address challenges in low-resolution images, occlusions, and varying lighting conditions. Practical experiments were conducted using simulated studio camera settings (Canon CJ14ex4.3) in 3D Max and Unreal Engine, evaluating various models for their accuracy, detail, realism, and efficiency. The project enhances the InstantMesh model to accept multiple images, improving reconstruction accuracy and user control.
 
 
-# 🚩 Todo List
+# 🚩 **Key Features**
 
-- [x] Release inference and training code.
+- [x] Multi-View Reconstruction: Leveraging multiple camera views to create detailed and accurate 3D models.
+- [x] Deep Learning Integration: Utilizing CNNs, GANs, and diffusion models for high-fidelity 3D reconstructions.
+- [x] User Customization: Allowing user selection from generated angles to create customized 3D models.
+- [x] Efficiency and Speed: Optimizing processing speed and resource usage for practical applications in virtual studio environments.
+
 
 # ⚙️ Dependencies and Installation
 
