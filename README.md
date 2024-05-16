@@ -97,8 +97,6 @@ python run.py configs/instant-mesh-large.yaml examples/hatsune_miku.png --save_v
 instantmesh
 │
 ├── app.py
-├── commond
-├── requirements.txt
 ├── run.py
 ├── train.py
 ├── assets
@@ -117,7 +115,6 @@ instantmesh
 │   ├── 1.jpg
 │   ├── 2.jpg
 │   └── 3.jpg
-├── exmpl
 ├── outputs
 │   └── instant-mesh-large
 │       ├── images
@@ -125,15 +122,8 @@ instantmesh
 │       ├── meshes
 │       └── videos
 ├── src
-│   ├── __pycache__
-│   ├── data
-│   ├── models
-│   ├── utils
-│   ├── __init__.py
-│   ├── model_mesh.py
-│   └── model.py
 └── zero123plus
-    └── pipeline.py
+
 
 
 
