@@ -91,7 +91,30 @@ python run.py configs/instant-mesh-large.yaml examples/hatsune_miku.png --save_v
 ```
 
 
-##Describe
+
+## Code Implementation
+Code Initialization and Configuration
+A conditional statement was used to determine whether to create a rembg session based on user input (args.no_rembg). This decision allowed for optional removal of backgrounds from input images, providing flexibility in preprocessing based on project requirements. When enabled, a new rembg session was initialized.
+
+Directory and List Setup
+Directories and lists were established to manage outputs, images, and tensors. A specific directory was created for saving multiview images, ensuring structured storage for results, crucial for maintaining workflow and preventing data loss.
+
+Image Preprocessing and Multiview Generation
+Each input image was processed sequentially, with filenames extracted for later reference. If background removal was activated, the background was removed using the rembg session, and the foreground resized for consistent scaling across all images. This preprocessing ensured uniformity and quality in the generated multiview images.
+
+The preprocessed image was passed through a diffusion pipeline to generate an output image, which was converted into a NumPy array, normalized, and transformed into a PyTorch tensor. The tensor was rearranged to represent six distinct views of the image, simulating a multiview scenario. Each view was saved individually to the designated multiview directory, creating a comprehensive set of perspectives for further analysis and processing.
+
+User Interaction and Image Selection
+Post-generation, the multiview images were compiled into a list, and users were prompted to select specific views from the outputs. The selected views were concatenated to form a combined image, saved to the specified output path, enhancing the visual comprehensiveness of the generated content.
+
+Memory Management and Tensor Conversion
+To optimize memory usage, the diffusion pipeline was deleted after processing images. The saved multiview images were loaded and converted back into PyTorch tensors, rearranged to maintain the multiview format, and added to the output list, ensuring all processed data was correctly formatted for the next stages of reconstruction.
+
+Enhancements and User Flexibility
+We implemented significant modifications to better suit our specific needs. The modified system now allows the input of any number of images, increasing the depth and accuracy of multiview reconstructions. Users can select six new generated angles, enabling the creation of new 3D models from selected views. These changes aim to make the system more versatile and user-friendly, allowing greater customization and improving the overall quality of 3D models, aligning closely with the dynamic and evolving demands of Mo-Sys Studio.
+
+
+## Describe
 
 
 
