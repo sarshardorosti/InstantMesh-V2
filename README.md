@@ -84,7 +84,7 @@ By default, we use the `instant-mesh-base` reconstruction model variant.
 
 To generate 3D meshes from images via command line, simply run:
 ```bash
-python run.py configs/instant-mesh-large.yaml examples/ --save_video
+python run.py configs/instant-mesh-base.yaml examples/ 
 ```
 
 Please copy the required images as input in the examples folder. 
