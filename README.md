@@ -19,6 +19,7 @@ InstantMesh integrates sparse-view large reconstruction models and multi-view di
 Initial experiments showed that the enhanced InstantMesh model excels in edge detection, object recognition, and background removal. The modifications resulted in significant improvements in fidelity and flexibility, allowing for more detailed and customizable 3D reconstructions from multiple camera angles.
 
 ![diagram2 copy](https://github.com/sarshardorosti/MasterClass/assets/50841748/765baaca-da96-4483-8216-104a3f06b087)
+![1111111](https://github.com/sarshardorosti/MasterClass/assets/50841748/6cd9de02-08f5-4570-8f81-415b3ea6c75f)
 
 # 🚩 **Key Features**
 
@@ -27,9 +28,9 @@ Initial experiments showed that the enhanced InstantMesh model excels in edge de
 - [x] User Customization: Allowing user selection from generated angles to create customized 3D models.
 - [x] Efficiency and Speed: Optimizing processing speed and resource usage for practical applications in virtual studio environments.
 
-![1111111](https://github.com/sarshardorosti/MasterClass/assets/50841748/6cd9de02-08f5-4570-8f81-415b3ea6c75f)
 
 
+It is also worth mentioning that with further investigation, we were able to run the InstantMesh code in ComfyUI and in future updates, we plan to connect it to Unreal Engine for real-time output.
 
 
 # ⚙️ Dependencies and Installation
