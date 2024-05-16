@@ -89,6 +89,11 @@ To generate 3D meshes from images via command line, simply run:
 ```bash
 python run.py configs/instant-mesh-large.yaml examples/hatsune_miku.png --save_video
 ```
+
+
+
+## Repositorymap
+```
 instantmesh
 │
 ├── app.py
@@ -131,6 +136,8 @@ instantmesh
     └── pipeline.py
 
 
+
+```
 
 ## Code Implementation
 Code Initialization and Configuration
