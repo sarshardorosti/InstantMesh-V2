@@ -81,8 +81,11 @@ python run.py configs/instant-mesh-large.yaml examples/hatsune_miku.png --save_v
 ```
 
 Please place the required images as input in the examples folder. 
+
 After running the code from the command line, the newly generated angles will be created in the multiviews directory within images.
+
 You will then be prompted to sequentially enter the numbers of 6 desired angles in the command line.
+
 A 3*2 multiview image with a .png extension will be produced in the images folder, and using this image, a 3D mesh model will be created in the meshes folder.
 
 
