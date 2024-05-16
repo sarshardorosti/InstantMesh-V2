@@ -20,7 +20,7 @@ Impact on Virtual Productions
 We hope to produce a flexible and user-friendly model by putting these modifications into practice that not only satisfies but also surpasses the dynamic needs of Mo-Sys studio projects. This development ensures that we can make accurate predictions about the placement of cameras relative to objects, as well as the positioning of objects within a virtual scene in our virtual studio productions. By resolving the limitations of the studied model, we can ensure more precise and reliable outcomes in our productions.
 
 
-# 🚩 **Key Features**
+# 🚩 **Contribution**
 We have successfully integrated several advanced features into our project:
 
 - [x] Multi-View Reconstruction: Leveraging multiple camera views to create detailed and accurate 3D models.
@@ -77,7 +77,7 @@ By default, we use the `instant-mesh-large` reconstruction model variant.
 
 To generate 3D meshes from images via command line, simply run:
 ```bash
-python run.py configs/instant-mesh-large.yaml examples/hatsune_miku.png --save_video
+python run.py configs/instant-mesh-large.yaml examples/ --save_video
 ```
 
 Please place the required images as input in the examples folder. 
@@ -92,6 +92,7 @@ A 3*2 multiview image with a .png extension will be produced in the images folde
 ## Repositorymap
 
 copy instant_mesh_base.ckpt to the ckpt folder
+
 copy instant-mesh-base.yaml to the configs folder
 
 ```
