@@ -89,6 +89,46 @@ To generate 3D meshes from images via command line, simply run:
 ```bash
 python run.py configs/instant-mesh-large.yaml examples/hatsune_miku.png --save_video
 ```
+instantmesh
+│
+├── app.py
+├── commond
+├── requirements.txt
+├── run.py
+├── train.py
+├── assets
+├── ckpts
+│   ├── .gitattributes
+│   ├── diffusion_pytorch_model.bin
+│   ├── instant_mesh_base.ckpt
+│   ├── instant_mesh_large.ckpt
+│   ├── models--sudo-ai--zero123plus-v1.2
+│   └── models--TencentARC--InstantMesh
+├── configs
+│   ├── instant-mesh-base.yaml
+│   ├── instant-mesh-large.yaml
+├── docker
+├── examples
+│   ├── 1.jpg
+│   ├── 2.jpg
+│   └── 3.jpg
+├── exmpl
+├── outputs
+│   └── instant-mesh-large
+│       ├── images
+│       │   └── multiviews
+│       ├── meshes
+│       └── videos
+├── src
+│   ├── __pycache__
+│   ├── data
+│   ├── models
+│   ├── utils
+│   ├── __init__.py
+│   ├── model_mesh.py
+│   └── model.py
+└── zero123plus
+    └── pipeline.py
 
 
 
