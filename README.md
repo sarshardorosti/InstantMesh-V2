@@ -33,7 +33,7 @@ Enhancements and Objectives By implementing these changes, we aim to create a ve
 We have successfully integrated several advanced features into our project:
 
 - [x] Multi-View Reconstruction: Leveraging multiple camera views to create detailed and accurate 3D models.
-- [x] Deep Learning Integration: Utilizing CNNs, GANs, and diffusion models for high-fidelity 3D reconstructions.
+- [x] Deep Learning Integration: Utilizing CNNs and diffusion models for high-fidelity 3D reconstructions.
 - [x] User Customization: Allowing user selection from generated angles to create customized 3D models.
 - [x] Efficiency and Speed: Optimizing processing speed and resource usage for practical applications in virtual studio environments.
 
@@ -78,7 +78,7 @@ We provide 4 sparse-view reconstruction model variants and a customized Zero123+
 
 Our inference script will download the models automatically. Alternatively, you can manually download the models and put them under the `ckpts/` directory.
 
-By default, we use the `instant-mesh-large` reconstruction model variant.
+By default, we use the `instant-mesh-base` reconstruction model variant.
 
 ## Running with command line
 
@@ -87,7 +87,7 @@ To generate 3D meshes from images via command line, simply run:
 python run.py configs/instant-mesh-large.yaml examples/ --save_video
 ```
 
-Please place the required images as input in the examples folder. 
+Please copy the required images as input in the examples folder. 
 
 After running the code from the command line, the newly generated angles will be created in the multiviews directory within images.
 
@@ -98,7 +98,7 @@ A 3*2 multiview image with a .png extension will be produced in the images folde
 
 ## Repositorymap
 
-copy instant_mesh_base.ckpt to the ckpt folder
+copy instant_mesh_base.ckpt to the ckpt folder (download form here https://huggingface.co/TencentARC/InstantMesh/tree/main)
 
 copy instant-mesh-base.yaml to the configs folder
 
