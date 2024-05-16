@@ -3,9 +3,10 @@
 # InstantMesh V2: Efficient 3D Mesh Generation from a Single Image with Sparse-view Large Reconstruction Models
 
 </div>
----
+
 ![Layout](https://github.com/sarshardorosti/MasterClass/assets/50841748/e16a716a-e05e-46ed-82bd-eb4957d89a39)
 
+---
 Machine Learning Techniques for Enhanced 3D Reconstruction from Multi-Camera Studio Views
 Project Overview
 This project explores the use of machine learning (ML) for 3D reconstruction of studio sets from three or more camera views. It was conducted as part of the MSc in Artificial Intelligence for Media at Bournemouth University. 
