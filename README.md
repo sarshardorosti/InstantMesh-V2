@@ -1,14 +1,15 @@
 <div align="center">
   
-# InstantMesh V2: Efficient 3D Mesh Generation from a Single Image with Sparse-view Large Reconstruction Models
+# InstantMesh V2: : Machine Learning Techniques for Enhanced 3D Reconstruction from Multi-Camera Studio Views
+
 
 </div>
 
 ![Layout](https://github.com/sarshardorosti/MasterClass/assets/50841748/e16a716a-e05e-46ed-82bd-eb4957d89a39)
 
 ---
-Machine Learning Techniques for Enhanced 3D Reconstruction from Multi-Camera Studio Views
-Project Overview
+
+# Project Overview
 This project explores the use of machine learning (ML) for 3D reconstruction of studio sets from three or more camera views. It was conducted as part of the MSc in Artificial Intelligence for Media at Bournemouth University. 
 The research investigates advanced methods for converting 2D images into 3D models, emphasizing deep learning technologies like CNNs and diffusion models. This project aims to overcome the challenges by combining techniques to produce high-quality 3D models from multiple camera views, particularly in studio environments. We reviewed over 80 papers from 2014 to 2024 and analyzed 18 models to address challenges in low-resolution images, occlusions, and varying lighting conditions. Practical experiments were conducted using simulated studio camera settings (Canon CJ14ex4.3) in 3D Max and Unreal Engine, evaluating various models for their accuracy, detail, realism, and efficiency.
 
@@ -111,13 +112,13 @@ instantmesh
 ├── ckpts
 ├── configs
 ├── docker
-├── examples
+├── examples/
 │   ├── 1.jpg
 │   ├── 2.jpg
 │   └── 3.jpg
-├── outputs
+├── outputs/
 │   └── instant-mesh-base
-│       ├── images
+│       ├── images/
 │       │   └── multiviews
 │       ├── meshes
 │       └── videos
