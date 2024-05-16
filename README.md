@@ -67,6 +67,14 @@ pip install -r requirements.txt
 
 # How to Use
 
+Resource Challenges and Solutions
+During development, we faced significant challenges related to the high resource demands of the code, particularly RAM, CPU, and GPU utilization. Initial tests on a personal laptop (16GB RAM, NVIDIA RTX 3060 6GB GPU, AMD Ryzen 9 6900HX CPU) revealed that the system quickly reached full capacity, halting the process after generating only a few views. Subsequent tests on a more powerful setup at the university (13th Gen Intel Core™ i9-13700X, NVIDIA GeForce RTX 4080 16GB GDDR6 GPU, 64GB DDR5 7800MHz RAM, RedHat Enterprise 64bit) encountered similar issues, necessitating further code modifications.
+
+To optimize the process, we consolidated the generation of initial images into a single 'for' loop, which marginally increased processing speed and significantly reduced RAM and GPU requirements. Additionally, we cleared the pipeline after combining images to further minimize memory usage. Despite modifying mesh resolution, input image size, and generated multiview image dimensions, these changes did not yield a notable impact, leading to a decision to revert to the original settings.
+
+Model Adjustments and Performance
+We transitioned from the 'mesh_large' model to 'mesh_base'. Comparative analysis of the outputs derived from 'mesh_large' accessed online showed no significant difference compared to our test image. This indicated that the impact of combining selected angles, added to our code, could approximate the 'large' model results while using the 'base' model. Our experiences throughout the project helped us increase implementation speed and systematically improve quality, enabling additional code modifications for processing on personal systems.
+
 ## Download the models
 
 We provide 4 sparse-view reconstruction model variants and a customized Zero123++ UNet for white-background image generation in the [model card](https://huggingface.co/TencentARC/InstantMesh).
@@ -83,18 +91,15 @@ python run.py configs/instant-mesh-large.yaml examples/hatsune_miku.png --save_v
 ```
 
 
-![Layout](https://github.com/sarshardorosti/MasterClass/assets/50841748/e16a716a-e05e-46ed-82bd-eb4957d89a39)
-
-
-
 ##Describe
 
 
 
+![Layout](https://github.com/sarshardorosti/MasterClass/assets/50841748/e16a716a-e05e-46ed-82bd-eb4957d89a39)
 
 
-
-
+Enhancements and Objectives
+By implementing these changes, we aim to create a versatile and user-friendly model that not only meets but exceeds the dynamic requirements of Mo-Sys studio projects. This next step leverages the strengths of InstantMesh while addressing its minor shortcomings, ensuring it remains at the forefront of 3D modeling technology. Our proactive approach in customizing and enhancing InstantMesh will solidify its role as a critical tool in our studio's technological arsenal, driving innovation and efficiency in our 3D production processes.
 
 
 
