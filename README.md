@@ -4,7 +4,7 @@
 
 </div>
 ---
-
+![Layout](https://github.com/sarshardorosti/MasterClass/assets/50841748/e16a716a-e05e-46ed-82bd-eb4957d89a39)
 
 Machine Learning Techniques for Enhanced 3D Reconstruction from Multi-Camera Studio Views
 Project Overview
@@ -19,7 +19,8 @@ Despite its robustness, InstantMesh does exhibit some limitations, particularly 
 Impact on Virtual Productions
 We hope to produce a flexible and user-friendly model by putting these modifications into practice that not only satisfies but also surpasses the dynamic needs of Mo-Sys studio projects. This development ensures that we can make accurate predictions about the placement of cameras relative to objects, as well as the positioning of objects within a virtual scene in our virtual studio productions. By resolving the limitations of the studied model, we can ensure more precise and reliable outcomes in our productions.
 
-![Layout](https://github.com/sarshardorosti/MasterClass/assets/50841748/e16a716a-e05e-46ed-82bd-eb4957d89a39)
+## InstantMesh V2 Architecture
+![1111111](https://github.com/sarshardorosti/MasterClass/assets/50841748/6cd9de02-08f5-4570-8f81-415b3ea6c75f)
 
 
 Enhancements and Objectives By implementing these changes, we aim to create a versatile and user-friendly model that not only meets but exceeds the dynamic requirements of Mo-Sys studio projects. This next step leverages the strengths of InstantMesh while addressing its minor shortcomings. 
@@ -36,8 +37,6 @@ We have successfully integrated several advanced features into our project:
 
 ![diagram2 copy](https://github.com/sarshardorosti/MasterClass/assets/50841748/765baaca-da96-4483-8216-104a3f06b087)
 
-## InstantMesh V2 Architecture
-![1111111](https://github.com/sarshardorosti/MasterClass/assets/50841748/6cd9de02-08f5-4570-8f81-415b3ea6c75f)
 
 It is also worth mentioning that with further investigation, we were able to run the InstantMesh code in ComfyUI and in future updates, we plan to connect it to Unreal Engine for real-time output.
 <a href="https://github.com/jtydhr88/ComfyUI-InstantMesh"><img src="https://img.shields.io/badge/Demo-ComfyUI-8A2BE2"></a>
