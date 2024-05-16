@@ -64,17 +64,7 @@ pip install https://huggingface.co/r4ziel/xformers_pre_built/resolve/main/triton
 # Install other requirements
 pip install -r requirements.txt
 ```
-
 # How to Use
-
-Resource Challenges and Solutions
-During development, we faced significant challenges related to the high resource demands of the code, particularly RAM, CPU, and GPU utilization. Initial tests on a personal laptop (16GB RAM, NVIDIA RTX 3060 6GB GPU, AMD Ryzen 9 6900HX CPU) revealed that the system quickly reached full capacity, halting the process after generating only a few views. Subsequent tests on a more powerful setup at the university (13th Gen Intel Core™ i9-13700X, NVIDIA GeForce RTX 4080 16GB GDDR6 GPU, 64GB DDR5 7800MHz RAM, RedHat Enterprise 64bit) encountered similar issues, necessitating further code modifications.
-
-To optimize the process, we consolidated the generation of initial images into a single 'for' loop, which marginally increased processing speed and significantly reduced RAM and GPU requirements. Additionally, we cleared the pipeline after combining images to further minimize memory usage. Despite modifying mesh resolution, input image size, and generated multiview image dimensions, these changes did not yield a notable impact, leading to a decision to revert to the original settings.
-
-Model Adjustments and Performance
-We transitioned from the 'mesh_large' model to 'mesh_base'. Comparative analysis of the outputs derived from 'mesh_large' accessed online showed no significant difference compared to our test image. This indicated that the impact of combining selected angles, added to our code, could approximate the 'large' model results while using the 'base' model. Our experiences throughout the project helped us increase implementation speed and systematically improve quality, enabling additional code modifications for processing on personal systems.
-
 ## Download the models
 
 We provide 4 sparse-view reconstruction model variants and a customized Zero123++ UNet for white-background image generation in the [model card](https://huggingface.co/TencentARC/InstantMesh).
@@ -90,13 +80,17 @@ To generate 3D meshes from images via command line, simply run:
 python run.py configs/instant-mesh-large.yaml examples/hatsune_miku.png --save_video
 ```
 
+Please place the required images as input in the examples folder. 
+After running the code from the command line, the newly generated angles will be created in the multiviews directory within images.
+You will then be prompted to sequentially enter the numbers of 6 desired angles in the command line.
+A 3*2 multiview image with a .png extension will be produced in the images folder, and using this image, a 3D mesh model will be created in the meshes folder.
 
 
 ## Repositorymap
 
 copy instant_mesh_base.ckpt to the ckpt folder
 copy instant-mesh-base.yaml to the configs folder
-Please place the required images as input in the examples folder. After running the code from the command line, the newly generated angles will be created in the multiviews directory within images. You will then be prompted to sequentially enter the numbers of 6 desired angles in the command line. A 3*2 multiview image with a .png extension will be produced in the images folder, and using this image, a 3D mesh model will be created in the meshes folder.
+
 ```
 instantmesh
 │
@@ -120,6 +114,14 @@ instantmesh
 ├── src
 └── zero123plus
 ```
+
+## Resource Challenges and Solutions
+During development, we faced significant challenges related to the high resource demands of the code, particularly RAM, CPU, and GPU utilization. Initial tests on a personal laptop (16GB RAM, NVIDIA RTX 3060 6GB GPU, AMD Ryzen 9 6900HX CPU) revealed that the system quickly reached full capacity, halting the process after generating only a few views. Subsequent tests on a more powerful setup at the university (13th Gen Intel Core™ i9-13700X, NVIDIA GeForce RTX 4080 16GB GDDR6 GPU, 64GB DDR5 7800MHz RAM, RedHat Enterprise 64bit) encountered similar issues, necessitating further code modifications.
+
+To optimize the process, we consolidated the generation of initial images into a single 'for' loop, which marginally increased processing speed and significantly reduced RAM and GPU requirements. Additionally, we cleared the pipeline after combining images to further minimize memory usage. Despite modifying mesh resolution, input image size, and generated multiview image dimensions, these changes did not yield a notable impact, leading to a decision to revert to the original settings.
+
+Model Adjustments and Performance
+We transitioned from the 'mesh_large' model to 'mesh_base'. Comparative analysis of the outputs derived from 'mesh_large' accessed online showed no significant difference compared to our test image. This indicated that the impact of combining selected angles, added to our code, could approximate the 'large' model results while using the 'base' model. Our experiences throughout the project helped us increase implementation speed and systematically improve quality, enabling additional code modifications for processing on personal systems.
 
 ## Code Implementation
 Code Initialization and Configuration
