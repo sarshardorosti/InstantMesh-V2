@@ -5,10 +5,8 @@
 
 
 </div>
-![aa222](https://github.com/sarshardorosti/MasterClass/assets/50841748/86a6872e-dd38-4050-9aee-b68e9802a57a)
-
-
 ---
+![aa222](https://github.com/sarshardorosti/MasterClass/assets/50841748/0defb4f5-7eb9-4c50-a1ca-4770c6c43e13)
 
 
 Machine Learning Techniques for Enhanced 3D Reconstruction from Multi-Camera Studio Views
