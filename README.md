@@ -12,8 +12,12 @@
 Machine Learning Techniques for Enhanced 3D Reconstruction from Multi-Camera Studio Views
 Project Overview
 This project explores the use of machine learning (ML) for 3D reconstruction of studio sets from three or more camera views. It was conducted as part of the MSc in Artificial Intelligence for Media at Bournemouth University. 
-The research investigates advanced methods for converting 2D images into 3D models, emphasizing deep learning technologies like CNNs and diffusion models. We reviewed over 80 papers from 2014 to 2024 and analyzed 18 models to address challenges in low-resolution images, occlusions, and varying lighting conditions. Practical experiments were conducted using simulated studio camera settings (Canon CJ14ex4.3) in 3D Max and Unreal Engine, evaluating various models for their accuracy, detail, realism, and efficiency. The project enhances the InstantMesh model to accept multiple images, improving reconstruction accuracy and user control.
-![Layout](https://github.com/sarshardorosti/MasterClass/assets/50841748/43896a4b-9d78-400a-b2a5-efada58e7de8)
+The research investigates advanced methods for converting 2D images into 3D models, emphasizing deep learning technologies like CNNs and diffusion models. This project aims to overcome the challenges by combining techniques to produce high-quality 3D models from multiple camera views, particularly in studio environments. We reviewed over 80 papers from 2014 to 2024 and analyzed 18 models to address challenges in low-resolution images, occlusions, and varying lighting conditions. Practical experiments were conducted using simulated studio camera settings (Canon CJ14ex4.3) in 3D Max and Unreal Engine, evaluating various models for their accuracy, detail, realism, and efficiency.
+
+During the final phases of our assessment, we identified and tested InstantMesh, a solution that effectively addresses the limitations of earlier models. InstantMesh emerged as the optimal choice due to its ability to manage multiviews, a challenge for many previous models that relied on single-image inputs or had limited capacity to handle diverse view angles.
+InstantMesh integrates sparse-view large reconstruction models and multi-view diffusion models to ensure rapid processing and significantly enhance the detail and quality of 3D meshes. This dual approach makes InstantMesh faster and more accurate than other methods, ideal for our studio's fast-paced, quality-focused production environment.
+Initial experiments showed that the enhanced InstantMesh model excels in edge detection, object recognition, and background removal. The modifications resulted in significant improvements in fidelity and flexibility, allowing for more detailed and customizable 3D reconstructions from multiple camera angles.
+
 
 
 # 🚩 **Key Features**
@@ -22,6 +26,7 @@ The research investigates advanced methods for converting 2D images into 3D mode
 - [x] Deep Learning Integration: Utilizing CNNs, GANs, and diffusion models for high-fidelity 3D reconstructions.
 - [x] User Customization: Allowing user selection from generated angles to create customized 3D models.
 - [x] Efficiency and Speed: Optimizing processing speed and resource usage for practical applications in virtual studio environments.
+![diagram2](https://github.com/sarshardorosti/MasterClass/assets/50841748/3111c6b1-a30d-48c1-9f17-d82bfb90f733)
 
 
 # ⚙️ Dependencies and Installation
