@@ -106,7 +106,6 @@ copy instant-mesh-base.yaml to the configs folder
 instantmesh
 │
 ├── app.py
-├── run.py
 ├── train.py
 ├── assets
 ├── ckpts
